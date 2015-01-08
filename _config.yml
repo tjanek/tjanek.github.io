@@ -2,10 +2,10 @@
 #      Main Configs       #
 # ----------------------- #
 
-url: http://tjanek.github.io
-title: My Octopress Blog
-subtitle: A blogging framework for hackers.
-author: Your Name
+url: http://tomaszjanek.pl
+title: Tomasz Janek
+subtitle: Mainly about JVM, agile and team development.
+author: Tomasz Janek
 simple_search: https://www.google.com/search
 description:
 
@@ -20,6 +20,7 @@ subscribe_rss: /atom.xml
 subscribe_email:
 # RSS feeds can list your email address if you like
 email:
+email_md5: fcab22aebe6ca2b3468b325c6742c97b
 
 # ----------------------- #
 #    Jekyll & Plugins     #
@@ -63,14 +64,17 @@ default_asides: [asides/recent_posts.html, asides/github.html, asides/delicious.
 #   3rd Party Settings    #
 # ----------------------- #
 
+# LinkedIn
+linkedin_user: tomaszjanek
+
 # Github repositories
-github_user:
+github_user: tjanek
 github_repo_count: 0
 github_show_profile_link: true
 github_skip_forks: true
 
 # Twitter
-twitter_user:
+twitter_user: tomasz_janek
 twitter_tweet_button: true
 
 # Google +1
