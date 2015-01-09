@@ -4,10 +4,10 @@
 
 url: http://tomaszjanek.pl
 title: Tomasz Janek
-subtitle: Mainly about JVM, agile and team development.
+subtitle:
 author: Tomasz Janek
 simple_search: https://www.google.com/search
-description:
+description: Passionate software developer.<br/>Java, Groovy and Scala enthusiast.<br/><br/>Strongly believes in Software Craftsmanship and Agile Development.<br/>Made in Poland, sometime in the 80s
 
 # Default date format is "ordinal" (resulting in "July 22nd 2007")
 # You can customize the format as defined in
@@ -66,6 +66,10 @@ default_asides: [asides/recent_posts.html, asides/github.html, asides/delicious.
 
 # LinkedIn
 linkedin_user: tomaszjanek
+
+#StackOverflow
+stackoverflow_user: tomasz-janek
+stackoverflow_user_id: 4403075
 
 # Github repositories
 github_user: tjanek
