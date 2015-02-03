@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Tomasz Janek]]></title>
-  <link href="http://tomaszjanek.pl/atom.xml" rel="self"/>
+  <title><![CDATA[Category: java | Tomasz Janek]]></title>
+  <link href="http://tomaszjanek.pl/blog/categories/java/atom.xml" rel="self"/>
   <link href="http://tomaszjanek.pl/"/>
   <updated>2015-02-03T12:27:15+01:00</updated>
   <id>http://tomaszjanek.pl/</id>
@@ -66,31 +66,29 @@
 <span class='line-number'>22</span>
 <span class='line-number'>23</span>
 <span class='line-number'>24</span>
-<span class='line-number'>25</span>
 </pre></td><td class='code'><pre><code class='groovy'><span class='line'> <span class="n">buildscript</span> <span class="o">{</span>
 </span><span class='line'>     <span class="n">repositories</span> <span class="o">{</span>
 </span><span class='line'>         <span class="n">mavenCentral</span><span class="o">()</span>
 </span><span class='line'>     <span class="o">}</span>
 </span><span class='line'>     <span class="n">dependencies</span> <span class="o">{</span>
-</span><span class='line'>         <span class="n">classpath</span><span class="o">(</span><span class="s2">&quot;org.springframework.boot:spring-boot-gradle-plugin:1.2.1.RELEASE&quot;</span><span class="o">)</span>
+</span><span class='line'>         <span class="n">classpath</span><span class="o">(&amp;</span><span class="n">ldquo</span><span class="o">;</span><span class="n">org</span><span class="o">.</span><span class="na">springframework</span><span class="o">.</span><span class="na">boot</span><span class="o">:</span><span class="n">spring</span><span class="o">-</span><span class="n">boot</span><span class="o">-</span><span class="n">gradle</span><span class="o">-</span><span class="nl">plugin:</span><span class="mf">1.2</span><span class="o">.</span><span class="mi">1</span><span class="o">.</span><span class="na">RELEASE</span><span class="o">&amp;</span><span class="n">rdquo</span><span class="o">;)</span>
 </span><span class='line'>         <span class="c1">// add spring-loaded dependency</span>
-</span><span class='line'>         <span class="n">classpath</span><span class="o">(</span><span class="s2">&quot;org.springframework:springloaded:1.2.1.RELEASE&quot;</span><span class="o">)</span>
+</span><span class='line'>         <span class="n">classpath</span><span class="o">(&amp;</span><span class="n">ldquo</span><span class="o">;</span><span class="n">org</span><span class="o">.</span><span class="na">springframework</span><span class="o">:</span><span class="nl">springloaded:</span><span class="mf">1.2</span><span class="o">.</span><span class="mi">1</span><span class="o">.</span><span class="na">RELEASE</span><span class="o">&amp;</span><span class="n">rdquo</span><span class="o">;)</span>
 </span><span class='line'>     <span class="o">}</span>
-</span><span class='line'> <span class="o">}</span>
+</span><span class='line'> <span class="o">}&lt;</span><span class="s">/p&gt;</span>
 </span><span class='line'>
+</span><span class='line'><span class="s">&lt;p&gt; apply plugin: &amp;lsquo;java&amp;rsquo;</span>
+</span><span class='line'><span class="s"> // apply idea plugin</span>
+</span><span class='line'><span class="s"> apply plugin: &amp;lsquo;idea&amp;rsquo;</span>
+</span><span class='line'><span class="s"> apply plugin: &amp;lsquo;spring-boot&amp;rsquo;&lt;/</span><span class="n">p</span><span class="o">&gt;</span>
 </span><span class='line'>
-</span><span class='line'> <span class="n">apply</span> <span class="nl">plugin:</span> <span class="s1">&#39;java&#39;</span>
-</span><span class='line'> <span class="c1">// apply idea plugin</span>
-</span><span class='line'> <span class="n">apply</span> <span class="nl">plugin:</span> <span class="s1">&#39;idea&#39;</span>
-</span><span class='line'> <span class="n">apply</span> <span class="nl">plugin:</span> <span class="s1">&#39;spring-boot&#39;</span>
-</span><span class='line'>
-</span><span class='line'> <span class="c1">// change default IntelliJ output directory for compiling classes</span>
+</span><span class='line'><span class="o">&lt;</span><span class="n">p</span><span class="o">&gt;</span> <span class="c1">// change default IntelliJ output directory for compiling classes</span>
 </span><span class='line'> <span class="n">idea</span> <span class="o">{</span>
 </span><span class='line'>     <span class="n">module</span> <span class="o">{</span>
 </span><span class='line'>         <span class="n">inheritOutputDirs</span> <span class="o">=</span> <span class="kc">false</span>
-</span><span class='line'>         <span class="n">outputDir</span> <span class="o">=</span> <span class="n">file</span><span class="o">(</span><span class="s2">&quot;$buildDir/classes/main/&quot;</span><span class="o">)</span>
-</span><span class='line'>     <span class="o">}</span>
-</span><span class='line'> <span class="o">}</span>
+</span><span class='line'>         <span class="n">outputDir</span> <span class="o">=</span> <span class="n">file</span><span class="o">(&amp;</span><span class="n">ldquo</span><span class="o">;</span><span class="n">$buildDir</span><span class="s">/classes/</span><span class="n">main</span><span class="s">/&amp;rdquo;)</span>
+</span><span class='line'><span class="s">     }</span>
+</span><span class='line'><span class="s"> }          &lt;br/</span><span class="o">&gt;</span>
 </span><span class='line'>
 </span></code></pre></td></tr></table></div></figure></p>
 

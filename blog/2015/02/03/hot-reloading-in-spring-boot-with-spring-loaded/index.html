@@ -5,12 +5,12 @@
 
 <head>
 	<meta charset="utf-8">
-	<title>Tomasz Janek</title>
+	<title>Hot reloading classes in Spring Boot with Spring Loaded, IntelliJ and Gradle - Tomasz Janek</title>
 	<meta name="author" content="Tomasz Janek">
 
 
 <meta name="description" content="Passionate software developer.Java, Groovy and Scala enthusiast.Strongly believes in Software Craftsmanship and Agile Development.Made in Poland, &hellip;">
-<meta name="keywords" content="Tomasz Janek, Janek, blog, java, groovy, scala, grails, spring, spring boot, spring-boot, jsf, mockito, spock, geb, jsf">
+<meta name="keywords" content="spring-boot intellij gradle spring-loaded hot-reloading">
 	
 	
 
@@ -22,7 +22,7 @@
 
 	<link href="/atom.xml" rel="alternate" title="Tomasz Janek" type="application/atom+xml">
 	
-	<link rel="canonical" href="http://tomaszjanek.pl/">
+	<link rel="canonical" href="http://tomaszjanek.pl/blog/2015/02/03/hot-reloading-in-spring-boot-with-spring-loaded/">
 	<link href="/favicon.png" rel="shortcut icon">
 	<link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
 	<link href="/stylesheets/font-awesome.min.css" media="screen, projection" rel="stylesheet" type="text/css">
@@ -107,39 +107,9 @@
 				
 			
 			<div class="mid-col-container">
-				<div id="content" class="inner">
-<div itemscope itemtype="http://schema.org/Blog">
-
-
-    <article class="post" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
-	<div class="meta">
-		<div class="date">
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2015-02-03T11:40:08+01:00" data-updated="true" itemprop="datePublished"></time></div>
-		<div class="tags">
-
-
-	<a class='category' href='/blog/categories/gradle/'>gradle</a>, <a class='category' href='/blog/categories/hot-reloading/'>hot-reloading</a>, <a class='category' href='/blog/categories/intellij/'>intellij</a>, <a class='category' href='/blog/categories/java/'>java</a>, <a class='category' href='/blog/categories/spring-boot/'>spring-boot</a>, <a class='category' href='/blog/categories/spring-loaded/'>spring-loaded</a>
-
-
-</div>
-		
-			<span class="comments"><a href="/blog/2015/02/03/hot-reloading-in-spring-boot-with-spring-loaded/#disqus_thread">Comments</a></span>
-		
-	</div>
-	<h1 class="title" itemprop="name"><a href="/blog/2015/02/03/hot-reloading-in-spring-boot-with-spring-loaded/" itemprop="url">Hot Reloading Classes in Spring Boot With Spring Loaded, IntelliJ and Gradle</a></h1>
-	<div class="entry-content" itemprop="articleBody">
-		<p> Actually almost all modern IDEs (IntelliJ, Eclipse, etc.) gives you support for
+				<div id="content" class="inner"><article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+	<h1 class="title" itemprop="name">Hot Reloading Classes in Spring Boot With Spring Loaded, IntelliJ and Gradle</h1>
+	<div class="entry-content" itemprop="articleBody"><p> Actually almost all modern IDEs (IntelliJ, Eclipse, etc.) gives you support for
  reloading classes without need to restart the whole application
  using of JDK <code>HotSwap</code> mechanism.</p>
 
@@ -226,19 +196,30 @@
 <p> So, if you want reloading system in running Spring Boot application that is not limited to HotSwap mechanism for free, then give Spring Loaded a try.
  Otherwise you may also check <a href="http://zeroturnaround.com/software/jrebel/">JRebel</a> ( not free ).
  In latest version 6.0, support for Spring Boot was added. JRebel also supports almost all major frameworks and application servers in Java ecosystem.</p>
-
-		
-		
-	</div>
+</div>
 
 </article>
 
+	<div class="share">
+	<div class="addthis_toolbox addthis_default_style ">
+	
+	
+	<a class="addthis_button_tweet"></a>
+	
+	
+	<a class="addthis_counter addthis_pill_style"></a>
+	</div>
+  <script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pubid="></script>
 </div>
-<nav id="pagenavi">
-    
-    
-    <div class="center"><a href="/blog/archives">Blog Archives</a></div>
-</nav></div>
+
+
+
+<section id="comment">
+    <h1 class="title">Comments</h1>
+    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+</section>
+</div>
 			</div>
 			<footer id="footer" class="inner">Copyright &copy; 2015
 
@@ -254,7 +235,10 @@ Design credit: <a href="http://shashankmehta.in/archive/2012/greyshade.html">Sha
       var disqus_shortname = 'tomaszjanek';
       
         
-        var disqus_script = 'count.js';
+        // var disqus_developer = 1;
+        var disqus_identifier = 'http://tomaszjanek.pl/blog/2015/02/03/hot-reloading-in-spring-boot-with-spring-loaded/';
+        var disqus_url = 'http://tomaszjanek.pl/blog/2015/02/03/hot-reloading-in-spring-boot-with-spring-loaded/';
+        var disqus_script = 'embed.js';
       
     (function () {
       var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
