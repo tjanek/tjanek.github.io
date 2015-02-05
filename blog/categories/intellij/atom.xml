@@ -4,7 +4,7 @@
   <title><![CDATA[Category: intellij | Tomasz Janek]]></title>
   <link href="http://tomaszjanek.pl/blog/categories/intellij/atom.xml" rel="self"/>
   <link href="http://tomaszjanek.pl/"/>
-  <updated>2015-02-03T12:27:15+01:00</updated>
+  <updated>2015-02-05T05:12:25+01:00</updated>
   <id>http://tomaszjanek.pl/</id>
   <author>
     <name><![CDATA[Tomasz Janek]]></name>
@@ -66,6 +66,14 @@
 <span class='line-number'>22</span>
 <span class='line-number'>23</span>
 <span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+<span class='line-number'>27</span>
+<span class='line-number'>28</span>
+<span class='line-number'>29</span>
+<span class='line-number'>30</span>
+<span class='line-number'>31</span>
+<span class='line-number'>32</span>
 </pre></td><td class='code'><pre><code class='groovy'><span class='line'> <span class="n">buildscript</span> <span class="o">{</span>
 </span><span class='line'>     <span class="n">repositories</span> <span class="o">{</span>
 </span><span class='line'>         <span class="n">mavenCentral</span><span class="o">()</span>
@@ -81,6 +89,14 @@
 </span><span class='line'><span class="s"> // apply idea plugin</span>
 </span><span class='line'><span class="s"> apply plugin: &amp;lsquo;idea&amp;rsquo;</span>
 </span><span class='line'><span class="s"> apply plugin: &amp;lsquo;spring-boot&amp;rsquo;&lt;/</span><span class="n">p</span><span class="o">&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="o">&lt;</span><span class="n">p</span><span class="o">&gt;</span> <span class="n">repositories</span> <span class="o">{</span>
+</span><span class='line'>     <span class="n">mavenCentral</span><span class="o">()</span>
+</span><span class='line'> <span class="o">}&lt;</span><span class="s">/p&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="s">&lt;p&gt; dependencies {</span>
+</span><span class='line'><span class="s">     compile(&amp;ldquo;org.springframework.boot:spring-boot-starter-web&amp;rdquo;)</span>
+</span><span class='line'><span class="s"> }&lt;/</span><span class="n">p</span><span class="o">&gt;</span>
 </span><span class='line'>
 </span><span class='line'><span class="o">&lt;</span><span class="n">p</span><span class="o">&gt;</span> <span class="c1">// change default IntelliJ output directory for compiling classes</span>
 </span><span class='line'> <span class="n">idea</span> <span class="o">{</span>
@@ -98,7 +114,7 @@
 
 <p> IntelliJ has also a feature called <code>Make Project Automatically</code>. If we enable this option, IntelliJ will compiles code automatically after few seconds.
  Unfortunately, this feature only works when application is not running / debugging inside the IDE.
- To make this works together, we must start the application outside the IDE.</p>
+ To make this works together, we must start the application outside the IDE. Example project can be found <a href="https://github.com/tjanek/spring-boot-spring-loaded">here</a>.</p>
 
 <p> So, if you want reloading system in running Spring Boot application that is not limited to HotSwap mechanism for free, then give Spring Loaded a try.
  Otherwise you may also check <a href="http://zeroturnaround.com/software/jrebel/">JRebel</a> ( not free ).
