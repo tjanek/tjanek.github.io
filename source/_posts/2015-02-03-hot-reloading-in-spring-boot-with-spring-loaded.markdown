@@ -51,6 +51,14 @@ keywords: spring-boot intellij gradle spring-loaded hot-reloading
  apply plugin: 'idea'
  apply plugin: 'spring-boot'
  
+ repositories {
+     mavenCentral()
+ }
+ 
+ dependencies {
+     compile("org.springframework.boot:spring-boot-starter-web")
+ }
+ 
  // change default IntelliJ output directory for compiling classes
  idea {
      module {
@@ -66,7 +74,7 @@ keywords: spring-boot intellij gradle spring-loaded hot-reloading
 
  IntelliJ has also a feature called `Make Project Automatically`. If we enable this option, IntelliJ will compiles code automatically after few seconds.
  Unfortunately, this feature only works when application is not running / debugging inside the IDE.
- To make this works together, we must start the application outside the IDE.
+ To make this works together, we must start the application outside the IDE. Example project can be found [here](https://github.com/tjanek/spring-boot-spring-loaded).
 
  So, if you want reloading system in running Spring Boot application that is not limited to HotSwap mechanism for free, then give Spring Loaded a try.
  Otherwise you may also check [JRebel](http://zeroturnaround.com/software/jrebel/) ( not free ).
